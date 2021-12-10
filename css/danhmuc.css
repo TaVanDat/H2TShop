@@ -18,9 +18,11 @@
 .head-bottom {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .head-bottom .logo{
 	padding-left: 50px;
+	width: 280px;height:60px;
 }
 
 .navbar{
@@ -49,7 +51,6 @@ a:hover{color: #F39C12;}
 .menu li{
 	padding-left: 10px;
 	float: left;
-	width: 175px;
 	line-height: 1.5em;
 	position: relative;
 	background: white;
@@ -65,24 +66,22 @@ a:hover{color: #F39C12;}
 .menu ul li{
 	border: 1px solid #d7dbdd;
 }
-
+.menu ul li:not(.menu ul ul li){width: 175px;}
+.menu >li >a{
+	padding: 0 8px;
+}
 .menu ul ul{
-	left: 175px;
-	top: 0px;
+	left: 173px;
+	top: -1px;
 }
 
-.menu ul ul li{
-	border: 1px solid #d7dbdd;
-}
- 
 .menu-sub-1 li{
+	border: 1px solid #d7dbdd;
 	width: 120px;
 }
-
 .menu-sub-2 li{
-	width: 250px;
+	width: 240px;
 }
-
 .icon ul{
 	margin: 0;
 	padding: 0;
@@ -108,7 +107,9 @@ nav a:hover{
 	text-decoration: none;
 	color: #F39C12;
 }
-
+body >img{
+	margin-top: -15px;
+}
 .section{
 	margin-top: 50px;
 }

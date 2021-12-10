@@ -18,11 +18,13 @@
 .head-bottom {
 	display: flex;
 	justify-content: space-between;
+	border-bottom: 1px solid #f7f7f7;
+	align-items: center;
 }
 .head-bottom .logo{
 	padding-left: 50px;
+	width: 280px;height:60px;
 }
-
 .navbar{
 	padding-left: 100px;
 	z-index: 1;
@@ -46,13 +48,11 @@
 .menu li{
 	padding-left: 10px;
 	float: left;
-	width: 175px;
 	line-height: 1.5em;
 	position: relative;
 	background: white;
 	padding: 10px;
 }
-
 
 a:hover{color: #F39C12;}
 
@@ -61,14 +61,17 @@ a:hover{color: #F39C12;}
 	cursor: pointer;
 	border-bottom: 1px solid black;
 }
-
+.menu >li >a{
+	padding: 0 8px;
+}
 .menu ul li{
 	border: 1px solid #d7dbdd;
 }
+.menu ul li:not(.menu ul ul li){width: 175px;}
 
 .menu ul ul{
-	left: 175px;
-	top: 0px;
+	left: 173px;
+	top: -1px;
 }
 
 .menu ul ul li{
@@ -80,7 +83,7 @@ a:hover{color: #F39C12;}
 }
 
 .menu-sub-2 li{
-	width: 250px;
+	width: 240px;
 }
 
 .icon ul{
@@ -115,10 +118,11 @@ nav a:hover{
 	height: 800px;
 /* 	overflow: hidden; */
 	position: absolute;
-	top: 47%;
+	top: 65%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: -1;
+	clear: both;
 }
 
 .navigation{

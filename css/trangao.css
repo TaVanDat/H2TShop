@@ -18,9 +18,11 @@
 .head-bottom {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .head-bottom .logo{
 	padding-left: 50px;
+	width: 280px;height:60px;
 }
 
 .navbar{
@@ -50,7 +52,6 @@ a:hover{color: #F39C12;}
 .menu li{
 	padding-left: 10px;
 	float: left;
-	width: 175px;
 	line-height: 1.5em;
 	position: relative;
 	background: white;
@@ -66,10 +67,14 @@ a:hover{color: #F39C12;}
 .menu ul li{
 	border: 1px solid #d7dbdd;
 }
+.menu ul li:not(.menu ul ul li){width: 175px;}
 
+.menu >li >a{
+	padding: 0 8px;
+}
 .menu ul ul{
-	left: 175px;
-	top: 0px;
+	left: 173px;
+	top: -1px;
 }
 
 .menu ul ul li{
@@ -81,7 +86,7 @@ a:hover{color: #F39C12;}
 }
 
 .menu-sub-2 li{
-	width: 250px;
+	width: 240px;
 }
 
 .icon ul{
@@ -112,6 +117,7 @@ nav a:hover{
 .banner img{
 /* 	width:1348px;height: 600px; */
 	margin-bottom: 20px;
+	margin-top: -15px;
 }
 /* phần thân website */
 .section-body{width: 100%;}
