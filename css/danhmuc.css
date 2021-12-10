@@ -1,0 +1,238 @@
+*{
+	font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.head-top{
+	height: 30px;
+	text-align: center;
+	background-color: #F8F9F9;
+}
+.head-top p{
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 30px;
+	color: #777777;
+}
+.head-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+.head-bottom .logo{
+	padding-left: 50px;
+}
+
+.navbar{
+	padding-left: 100px;
+	z-index: 1;
+}
+
+ ul{
+	list-style: none;
+}
+
+.menu a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{color: #F39C12;}
+
+.menu ul{
+	position: absolute;
+	top: 42px;
+	left: 0;
+	display: none;
+}
+
+.menu li{
+	padding-left: 10px;
+	float: left;
+	width: 175px;
+	line-height: 1.5em;
+	position: relative;
+	background: white;
+	padding: 10px;
+}
+
+.menu li:hover{
+	background: white;
+	cursor: pointer;
+	border-bottom: 1px solid black;
+}
+
+.menu ul li{
+	border: 1px solid #d7dbdd;
+}
+
+.menu ul ul{
+	left: 175px;
+	top: 0px;
+}
+
+.menu ul ul li{
+	border: 1px solid #d7dbdd;
+}
+ 
+.menu-sub-1 li{
+	width: 120px;
+}
+
+.menu-sub-2 li{
+	width: 250px;
+}
+
+.icon ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+}
+
+.icon ul li a{
+	padding: 17px 18px;
+	display: block;
+	font-size:30px;
+	color: black;
+}
+
+.icon ul li:hover{
+	cursor: pointer;
+}
+
+nav a{
+	color: black;
+}
+nav a:hover{
+	text-decoration: none;
+	color: #F39C12;
+}
+
+.section{
+	margin-top: 50px;
+}
+.title{
+	margin-left: 100px;
+}
+.title a{
+	text-decoration: none;
+	font-size: 30px;
+	color: black;
+	font-weight: 700;
+}
+.title a:hover{
+	cursor: pointer;
+	color: #F39C12;
+}
+.upsale {
+	margin: 40px 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.upsale .card .card-img-top{
+	position: relative;
+}
+.upsale .card a::after{
+	position: absolute;
+	content: "-20%";
+	width: 2.5rem;height: 1.2rem;
+	background-color: red;
+	font-size: .8rem;
+	text-align: center;
+	color: aliceblue;
+	top:2%;left: 2%;
+}
+
+.card-body a{
+	text-decoration: none;
+	color: black;
+}
+.card-body a:hover{
+	cursor: pointer;
+	color: #F39C12;
+}
+
+.card-price{
+	color: #F39C12;
+}
+
+.card-price del{
+	color: black;
+}
+
+.upsale{
+	margin: 40px 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.content{
+	margin: 0px 400px;
+	display: flex;
+	justify-content: space-between;
+}
+
+hr{
+	margin-top: 50px;  
+}
+
+.phoniex_menu{
+	margin:  20px 100px;
+	border: 0px solid #f8f8f8;
+}
+.phoniex_menu{
+	position: relative;
+	/*display: none;*/
+}
+
+.phoniex_menu > ul{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	justify-content: space-between;
+}
+
+
+.phoniex_menu > ul > li h4{
+	margin-right: 50px;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: black;
+	font-weight: 600;
+}
+
+.phoniex_menu > ul > li h5{
+	margin-right: 50px;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: black;
+	font-weight: 600;
+}
+
+.phoniex_menu > ul > li ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.phoniex_menu > ul > li ul li{
+	margin-bottom: 10px;
+}
+
+.phoniex_menu > ul > li ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+}
+
+.phoniex_menu .info-icon i{
+	font-size: 25px;
+}
+
+.footer{
+	height: 40px;
+	line-height: 40px;
+}

@@ -1,0 +1,319 @@
+*{
+	font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.head-top{
+	height: 30px;
+	text-align: center;
+	background-color: #F8F9F9;
+}
+.head-top p{
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 30px;
+	color: #777777;
+}
+.head-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+.head-bottom .logo{
+	padding-left: 50px;
+}
+
+.navbar{
+	padding-left: 100px;
+	z-index: 1;
+}
+
+ ul{
+	list-style: none;
+}
+
+.menu a{
+	text-decoration: none;
+	color: black;
+}
+.menu ul{
+	position: absolute;
+	top: 42px;
+	left: 0;
+	display: none;
+}
+
+.menu li{
+	padding-left: 10px;
+	float: left;
+	width: 175px;
+	line-height: 1.5em;
+	position: relative;
+	background: white;
+	padding: 10px;
+}
+
+
+a:hover{color: #F39C12;}
+
+.menu li:hover{
+	background: white;
+	cursor: pointer;
+	border-bottom: 1px solid black;
+}
+
+.menu ul li{
+	border: 1px solid #d7dbdd;
+}
+
+.menu ul ul{
+	left: 175px;
+	top: 0px;
+}
+
+.menu ul ul li{
+	border: 1px solid #d7dbdd;
+}
+ 
+.menu-sub-1 li{
+	width: 120px;
+}
+
+.menu-sub-2 li{
+	width: 250px;
+}
+
+.icon ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+}
+
+.icon ul li a{
+	padding: 17px 18px;
+	display: block;
+	font-size:30px;
+	color: black;
+}
+
+.icon ul li:hover{
+	cursor: pointer;
+}
+
+nav a{
+	color: black;
+}
+nav a:hover{
+	text-decoration: none;
+	color: #F39C12;
+}
+
+.slidershow{
+ 	margin-top : 160px;
+	width: 100%;
+	height: 800px;
+/* 	overflow: hidden; */
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+
+.navigation{
+	position: absolute;
+	bottom: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+
+.bar {
+	width: 15px;
+	height: 15px;
+	border: 2px solid #fff;
+	border-radius: 30px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.bar:hover{
+	background: white;
+	transition: 1s;
+}
+input[name="bottom"]{
+	position: absolute;
+	visibility: hidden;
+}
+
+.slides{
+	width: 500%;
+	height: 600px;
+	overflow: hidden;
+	display: flex;
+}
+
+.slide{
+	width: 20%;
+	transition: 0.6s;
+}
+
+.slide img{
+	width: 100%;
+	height: 100%;
+}
+
+#bottom_1:checked ~ .s1{
+	margin-left: 0;
+}
+
+#bottom_2:checked ~ .s1{
+	margin-left: -20%;
+}
+
+#bottom_3:checked ~ .s1{
+	margin-left: -40%;
+}
+
+#bottom_4:checked ~ .s1{
+	margin-left: -60%;
+} 
+
+.section{
+	margin-top: 50px;
+}
+.title{
+	text-align: center;
+}
+.title a{
+	text-decoration: none;
+	font-size: 40px;
+	color: black;
+	font-weight: 500;
+}
+.title a:hover{
+	cursor: pointer;
+	color: #F39C12;
+}
+.new-arrival {
+	margin: 40px 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.new-arrival .card .card-img-top{
+	position: relative;
+}
+.new-arrival .card a::after{
+	position: absolute;
+	content: "-20%";
+	width: 2.5rem;height: 1.2rem;
+	background-color: red;
+	font-size: .8rem;
+	text-align: center;
+	color: aliceblue;
+	top:2%;left: 2%;
+}
+
+.upsale .card .card-img-top{
+	position: relative;
+}
+.upsale .card a::after{
+	position: absolute;
+	content: "-75%";
+	width: 2.5rem;height: 1.2rem;
+	background-color: red;
+	font-size: .8rem;
+	text-align: center;
+	color: aliceblue;
+	top:2%;left: 2%;
+}
+
+.card-body a{
+	text-decoration: none;
+	color: black;
+}
+.card-body a:hover{
+	cursor: pointer;
+	color: #F39C12;
+}
+
+.card-price{
+	color: #F39C12;
+}
+
+.card-price del{
+	color: black;
+}
+
+.upsale{
+	margin: 40px 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.phoniex{
+	margin-top: 25px;
+	border: 1px solid #f8f8f8;
+	position: relative;
+}
+
+.phoniex_menu{
+	margin:  20px 100px;
+	border: 0px solid #f8f8f8;
+}
+.phoniex_menu{
+	position: relative;
+	/*display: none;*/
+}
+
+.phoniex_menu > ul{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	justify-content: space-between;
+}
+
+
+.phoniex_menu > ul > li h4{
+	margin-right: 50px;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: black;
+	font-weight: 600;
+}
+
+.phoniex_menu > ul > li h5{
+	margin-right: 50px;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: black;
+	font-weight: 600;
+}
+
+.phoniex_menu > ul > li ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.phoniex_menu > ul > li ul li{
+	margin-bottom: 10px;
+}
+
+.phoniex_menu > ul > li ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+}
+
+.phoniex_menu .info-icon i{
+	font-size: 25px;
+}
+
+.footer{
+	height: 40px;
+	line-height: 40px;
+}
